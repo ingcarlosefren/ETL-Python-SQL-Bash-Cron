@@ -24,7 +24,7 @@ def subir_archivo_a_gdrive(regitro_nuevo, ruta_a):
     if len(regitro_nuevo) > 0 :
         bfile = open(ruta_a, 'a')
         for i in regitro_nuevo:
-            resultado = subprocess.run(["/home/rsa-key-20211019/MariaDbAsociacion/gdrive", "upload", "-p", "12roKtlktgzmohAhbsy53YeU1HCDqbRix", "/home/rsa-key-20211019/MariaDbAsociacion/Backups/"+i])
+            resultado = subprocess.run(["/home/rsa-key-20211019/MariaDbAsociacion/gdrive", "upload", "-p", "XXXX-AQUI-TOKEN-GDRIVE-XXXX", "/home/rsa-key-20211019/MariaDbAsociacion/Backups/"+i])
             bfile.write("\n"+i)
             print(resultado)
             print(i)
